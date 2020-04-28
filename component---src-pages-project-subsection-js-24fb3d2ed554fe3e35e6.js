@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[7],{Az36:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a);n.default=function(e){var n=e.title,t=e.description;return c.a.createElement("div",{class:"col-md-3"},c.a.createElement("h3",null,n),c.a.createElement("p",null,t))}}}]);
+//# sourceMappingURL=component---src-pages-project-subsection-js-24fb3d2ed554fe3e35e6.js.map
