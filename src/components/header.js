@@ -1,33 +1,29 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import "./my-styles.css"
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      height: `100%`,
+      width: `220px`,
+      position: `fixed`,
+      zIndex: `1`,
+      top: `0`,
+      right: `0`,
+      overflowX: `hidden`,
+      paddingTop: `20px`,
     }}
   >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+    <div className="side-bar">
+      <img src={require('../images/bonnie-profile-icon.jpg')} id="profile-icon"/>
+
+      <h5 className="section"><Link to="/" className="section-link">About Me</Link></h5>
+      <h5 className="section"><Link to="/my-projects.js" className="section-link">My Projects</Link></h5>
+      <h5 className="section"><Link to="/my-resume.js" className="section-link">My Resume</Link></h5>
     </div>
+
   </header>
 )
 
