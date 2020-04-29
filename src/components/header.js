@@ -2,27 +2,30 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import "./my-styles.css"
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Container, Row, Col } from 'react-bootstrap';
 
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      height: `100%`,
-      width: `220px`,
+      height: `50px`,
+      width: `100%`,
       position: `fixed`,
       zIndex: `1`,
-      top: `0`,
-      right: `0`,
-      overflowX: `hidden`,
-      paddingTop: `20px`,
     }}
   >
-    <div className="side-bar">
-      <img src={require('../images/bonnie-profile-icon.jpg')} id="profile-icon"/>
-
-      <h5 className="section"><Link to="/" className="section-link">About Me</Link></h5>
-      <h5 className="section"><Link to="/my-projects.js" className="section-link">My Projects</Link></h5>
-      <h5 className="section"><Link to="/my-resume.js" className="section-link">My Resume</Link></h5>
-    </div>
+    <Container>
+      <Row>
+        <Col md={6}> </Col>
+        <Col md={6}> 
+          <div className="nav-bar">
+            <h5 className="section"><Link to="/" className="section-link">About</Link></h5>
+            <h5 className="section"><Link to="#my-projects" className="section-link">Projects</Link></h5>
+            <h5 className="section"><Link to="#my-projects" className="section-link">Resume</Link></h5>
+          </div>
+        </Col>
+      </Row>
+    </Container>
 
   </header>
 )

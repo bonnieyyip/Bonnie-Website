@@ -1,32 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
-body, h1 {
-    font-family: 'Molengo', sans-serif;
+body, h1, p {
+    font-family: 'Kanit', sans-serif;
 }
 
 div .introduction {
-    margin: 20em 10em;
+    margin: 8em 0em;
+}
+
+.about-me-paragraph {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
 }
 
 #profile-icon {
-    border-radius: 50%;
-    width: 12em;
-    height: 12em;
+    width: 30em;
+    height: 40em;
     object-fit: cover;
 }
 
-.side-bar {
-    margin: 10px;
+.nav-bar {
+    margin-top: 15px;
+    float: right;
 }
 
 .section {
     font-size: 20px;
-    margin: 20px 40px;
+    margin: 0px 20px;
+    display: inline-block;
 }
 
 .section-link {
     color: black;
     text-decoration: none;
+    font-family: 'Kanit', sans-serif;
 }
 
 .opening-image {

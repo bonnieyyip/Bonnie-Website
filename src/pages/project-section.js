@@ -3,10 +3,8 @@ import {Container, Row, Col} from 'react-bootstrap'
 
 const ProjectSection = ({title, description}) => (
   <Container>
-    <Row>
-      <Col>{title}</Col>
-      <Col>{description}</Col>
-    </Row>
+    <h1>{title}</h1>
+    <p>{description}</p>
   </Container>
 
 )
