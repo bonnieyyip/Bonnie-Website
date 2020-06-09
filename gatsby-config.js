@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Hello, it's Bonnie `,
+    title: `Bonnie Yip`,
     description: `Website that showcases Bonnie's projects amongst other things`,
     author: `Bonnie Yip`,
   },
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/octopus-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

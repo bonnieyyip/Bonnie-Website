@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@200&family=Allura&display=swap');
 html {
     scroll-behavior: smooth;
 }
 
-body, h1, p {
-    font-family: 'Kanit', sans-serif;
+::selection {
+    background: lightgray; 
 }
 
-div .introduction {
-    margin: 8em 0em;
+h1, p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+    letter-spacing: 0.1em;
+    font-size: 1.25em;
 }
 
 .about-me-paragraph {
@@ -24,12 +29,28 @@ div .introduction {
 }
 
 .nav-bar {
-    margin-top: 15px;
-    float: right;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.neon-banner {
+    font-family: 'Allura', cursive;
+    color: #fe7c9f;
+    text-shadow:
+      0 0 2px #fe7c9f,
+      0 0 2px #fe7c9f,
+      0 0 2px #fe7c9f,
+      0 0 2px #fe7c9f,
+      0 0 6px #fe7c9f,
+      0 0 6px #fe7c9f,
+      0 0 6px #fe7c9f;
+    font-size: 3em;
+    letter-spacing: 0.2em;
 }
 
 .section {
-    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 1em;
     margin: 0px 20px;
     display: inline-block;
 }
@@ -37,19 +58,24 @@ div .introduction {
 .section-link {
     color: black;
     text-decoration: none;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: 0.75em;
+    letter-spacing: 0.3em;
+}
+
+.section-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+div .in-background {
+    margin: 10em 0em;
 }
 
 .opening-image {
     position: absolute;
     width: 100%;
-    height: 100%;
     background-image: url('../images/marble-background.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-}
-
-.next-section{
-    position: absolute;
-    top: 100%;
-    width: 100%;
 }
